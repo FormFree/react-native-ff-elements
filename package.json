@@ -14,7 +14,7 @@
     "access": "restricted"
   },
   "repository": {
-    "url": "git+https://github.com/formfree/react-native-elements.git",
+    "url": "git+https://github.com/formfree/react-native-ff-elements.git",
     "type": "git"
   },
   "workspaces": {
