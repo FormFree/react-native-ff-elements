@@ -1,6 +1,6 @@
 {
   "name": "@react-native-ff-elements/core",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A React Native library for apps.",
   "author": "FormFree Holdings",
   "license": "MIT",
@@ -33,7 +33,7 @@
   "module": "lib/module/index.js",
   "types": "lib/typescript/src/index.d.ts",
   "dependencies": {
-    "@react-native-ff-elements/common": "^0.0.2"
+    "@react-native-ff-elements/common": "^0.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
