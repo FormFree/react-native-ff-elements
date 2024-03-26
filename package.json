@@ -1,5 +1,5 @@
 {
-  "name": "formfree-monorepo",
+  "name": "react-native-ff-elements-monorepo",
   "description": "A React Native library for apps.",
   "scripts": {
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
