@@ -207,9 +207,7 @@ export const useStyles = makeStyles(
       }),
     },
     buttonDisabled: {
-      backgroundColor: theme.colors.brandPrimary,
-      color: theme.colors.white,
-      opacity: 0.5,
+      opacity: 0.4,
     },
     buttonClear: {
       backgroundColor: theme.colors.transparent,
@@ -232,8 +230,7 @@ export const useStyles = makeStyles(
     },
     buttonClearDisabled: {
       backgroundColor: theme.colors.transparent,
-      color: theme.colors.brandPrimary,
-      opacity: 0.5,
+      opacity: 0.4,
     },
     buttonOutline: {
       backgroundColor: theme.colors.transparent,
@@ -259,8 +256,7 @@ export const useStyles = makeStyles(
     },
     buttonOutlineDisabled: {
       backgroundColor: theme.colors.transparent,
-      color: theme.colors.brandPrimary,
-      opacity: 0.5,
+      opacity: 0.4,
     },
     buttonInvOutline: {
       backgroundColor: theme.colors.transparent,
@@ -286,8 +282,7 @@ export const useStyles = makeStyles(
     },
     buttonInvOutlineDisabled: {
       backgroundColor: theme.colors.transparent,
-      color: theme.colors.textInv,
-      opacity: 0.5,
+      opacity: 0.4,
     },
     buttonInvClear: {
       backgroundColor: theme.colors.transparent,
@@ -310,8 +305,7 @@ export const useStyles = makeStyles(
     },
     buttonInvClearDisabled: {
       backgroundColor: theme.colors.transparent,
-      color: theme.colors.white,
-      opacity: 0.5,
+      opacity: 0.4,
     },
     buttonScreenHeader: {
       backgroundColor: theme.colors.transparent,
@@ -335,8 +329,7 @@ export const useStyles = makeStyles(
     },
     buttonScreenHeaderDisabled: {
       backgroundColor: theme.colors.transparent,
-      color: theme.colors.screenHeaderButtonText,
-      opacity: 0.5,
+      opacity: 0.4,
     },
     buttonInvScreenHeader: {
       backgroundColor: theme.colors.transparent,
@@ -360,8 +353,7 @@ export const useStyles = makeStyles(
     },
     buttonInvScreenHeaderDisabled: {
       backgroundColor: theme.colors.transparent,
-      color: theme.colors.stickyWhite,
-      opacity: 0.5,
+      opacity: 0.4,
     },
     /**
      * Shadow
@@ -391,7 +383,7 @@ export const useStyles = makeStyles(
             width: 0,
             height: 0,
           },
-          shadowOpacity: 0.34,
+          shadowopacity: 0.44,
           shadowRadius: 10,
         },
         android: {
