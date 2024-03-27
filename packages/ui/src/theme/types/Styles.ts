@@ -33,8 +33,8 @@ export type Styles = {
   textBold: TextStyle;
   textDim: TextStyle;
   textPlaceholder: TextStyle;
+  textLink: TextStyle;
 
-  link: TextStyle;
   button: ViewStyle;
   buttonTitle: TextStyle;
   buttonDisabled: ViewStyle | TextStyle;

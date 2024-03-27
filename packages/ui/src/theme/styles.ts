@@ -179,11 +179,9 @@ export const useStyles = makeStyles(
     textPlaceholder: {
       opacity: 0.4,
     },
-    link: {
+    textLink: {
       color: theme.colors.textLink,
       textDecorationLine: 'underline',
-      fontSize: fontSizes.normal,
-      fontFamily,
     },
     /**
      * Button
