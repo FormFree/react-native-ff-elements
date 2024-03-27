@@ -48,6 +48,8 @@ export const theme: CreateThemeOptions = {
     assertiveInv: '#ff804b',
     calm: '#0078fe',
 
+    disabled: '#787878',
+
     button: '#0078fe',
     buttonText: '#ffffffde',
     buttonInv: '#0078fe',
@@ -123,6 +125,8 @@ export const theme: CreateThemeOptions = {
     assertive: '#c00000',
     assertiveInv: '#ff804b',
     calm: '#0078fe',
+
+    disabled: '#787878',
 
     button: '#0078fe',
     buttonText: '#ffffff',
