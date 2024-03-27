@@ -25,4 +25,4 @@ const NetworkConnectionBar = () => {
   return null;
 };
 
-export default NetworkConnectionBar;
+export { NetworkConnectionBar };
