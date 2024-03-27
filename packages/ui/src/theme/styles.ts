@@ -3,14 +3,11 @@ import { Dimensions, Platform } from 'react-native';
 import type { Styles } from './types/Styles';
 import { makeStyles } from '@rneui/themed';
 
-export const fontFamily =
-  Platform.OS === 'ios' ? 'SFUIText-Regular' : 'SFUIText-Regular';
-
-export const fontFamilyBold =
-  Platform.OS === 'ios' ? 'SFUIText-Bold' : 'SFUIText-Bold';
-
-export const fontFamilyLight =
-  Platform.OS === 'ios' ? 'SFUIText-Light' : 'SFUIText-Light';
+export const fontFamily = 'WorkSans-Regular';
+export const fontFamilyBold = 'WorkSans-Bold';
+export const fontFamilyLight = 'WorkSans-Light';
+export const fontFamilyMedium = 'WorkSans-Medium';
+export const fontFamilySemiBold = 'WorkSans-SemiBold';
 
 export const fontSizes = {
   tiny: 12,
@@ -162,6 +159,14 @@ export const useStyles = makeStyles(
     },
     textLight: {
       fontFamily: fontFamilyLight,
+      fontWeight: 'normal',
+    },
+    textMedium: {
+      fontFamily: fontFamilyMedium,
+      fontWeight: 'normal',
+    },
+    textSemiBold: {
+      fontFamily: fontFamilySemiBold,
       fontWeight: 'normal',
     },
     textBold: {

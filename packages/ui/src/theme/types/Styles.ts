@@ -28,6 +28,8 @@ export type Styles = {
   textSmall: TextStyle;
   textTiny: TextStyle;
   textLight: TextStyle;
+  textMedium: TextStyle;
+  textSemiBold: TextStyle;
   textBold: TextStyle;
   textDim: TextStyle;
   textPlaceholder: TextStyle;

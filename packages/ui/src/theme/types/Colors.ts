@@ -16,9 +16,6 @@ export interface ColorSet {
   readonly textLinkInv: string;
   readonly textPlaceholder: string;
 
-  readonly icon: string;
-  readonly iconInv: string;
-
   readonly darkGray: string;
   readonly midGray: string;
   readonly lightGray: string;
@@ -44,22 +41,9 @@ export interface ColorSet {
   readonly assertiveInv: string;
   readonly calm: string;
 
-  readonly avatarBorder: string;
-
-  readonly bottomSheetBackground: string;
-
   readonly button: string;
   readonly buttonText: string;
   readonly buttonInv: string;
-
-  readonly listHeaderBackground: string;
-  readonly listHeaderTextBackground: string;
-  readonly listItem: string;
-  readonly listItemBorder: string;
-  readonly listItemAlt: string;
-  readonly listItemIcon: string;
-
-  readonly divider: string;
 
   readonly screenHeaderTitle: string;
   readonly screenHeaderBackground: string;
@@ -70,10 +54,6 @@ export interface ColorSet {
   readonly viewBackground: string;
   readonly viewAltBackground: string;
   readonly viewInvBackground: string;
-
-  readonly activeTabBackground: string;
-  readonly inactiveTabBackground: string;
-  readonly tabBarBorder: string;
 
   readonly switchOffThumb: string;
   readonly switchOnThumb: string;
