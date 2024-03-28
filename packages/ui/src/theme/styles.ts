@@ -355,6 +355,35 @@ export const useStyles = makeStyles(
       backgroundColor: theme.colors.transparent,
       opacity: 0.4,
     },
+    listItemContainer: {
+      backgroundColor: theme.colors.listItem,
+      borderColor: theme.colors.listItemBorder,
+      paddingLeft: 15,
+      overflow: 'hidden',
+    },
+    listItemBorder: {
+      left: 15,
+      right: 0,
+      borderColor: theme.colors.listItemBorder,
+    },
+    listItemTitle: {
+      color: theme.colors.text,
+      fontSize: fontSizes.normal,
+      fontFamily,
+      minWidth: 150,
+    },
+    listItemSubtitle: {
+      color: theme.colors.textDim,
+      fontSize: fontSizes.small,
+      fontFamily,
+      fontWeight: 'normal',
+    },
+    listItemValue: {
+      color: theme.colors.text,
+      fontSize: fontSizes.normal,
+      fontFamily,
+      textAlign: 'right',
+    },
     /**
      * Shadow
      */

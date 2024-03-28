@@ -45,6 +45,13 @@ export interface ColorSet {
   readonly buttonText: string;
   readonly buttonInv: string;
 
+  readonly listHeaderBackground: string;
+  readonly listHeaderTextBackground: string;
+  readonly listItem: string;
+  readonly listItemBorder: string;
+  readonly listItemAlt: string;
+  readonly listItemIcon: string;
+
   readonly screenHeaderTitle: string;
   readonly screenHeaderBackground: string;
   readonly screenHeaderInvBackground: string;

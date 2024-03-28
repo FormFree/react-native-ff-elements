@@ -15,6 +15,12 @@ export type Styles = {
   viewAlt: ViewStyle;
   viewInv: ViewStyle;
 
+  listItemContainer: ViewStyle;
+  listItemBorder: ViewStyle;
+  listItemTitle: TextStyle;
+  listItemSubtitle: TextStyle;
+  listItemValue: TextStyle;
+
   textHeadingXL: TextStyle;
   textHeading1: TextStyle;
   textHeading2: TextStyle;

@@ -54,6 +54,13 @@ export const theme: CreateThemeOptions = {
     buttonText: '#ffffffde',
     buttonInv: '#0078fe',
 
+    listHeaderBackground: '#000000',
+    listHeaderTextBackground: '#000000',
+    listItem: '#101010',
+    listItemBorder: '#202020',
+    listItemAlt: '#000000',
+    listItemIcon: '#878787',
+
     screenHeaderTitle: '#ffffffde',
     screenHeaderBackground: '#000000',
     screenHeaderInvBackground: '#0078fe',
@@ -131,6 +138,13 @@ export const theme: CreateThemeOptions = {
     button: '#0078fe',
     buttonText: '#ffffff',
     buttonInv: '#0078fe',
+
+    listHeaderBackground: '#f0f0f0',
+    listHeaderTextBackground: '#f0f0f0',
+    listItem: '#ffffff',
+    listItemBorder: '#e5e5e5',
+    listItemAlt: '#f0f0f0',
+    listItemIcon: '#aaaaaa',
 
     screenHeaderTitle: '#000000',
     screenHeaderBackground: '#ffffff',
