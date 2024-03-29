@@ -259,4 +259,4 @@ const useStyles = makeStyles((_theme, theme: AppTheme) => ({
   },
 }));
 
-export default WheelPicker;
+export { WheelPicker };
