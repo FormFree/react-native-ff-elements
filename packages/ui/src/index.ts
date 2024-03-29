@@ -7,3 +7,4 @@ export * from './KeyboardAccessory';
 export * from './NetworkConnectionBar';
 export * from './Modal';
 export * from './WebView';
+export * from './WheelPicker';

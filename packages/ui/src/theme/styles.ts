@@ -69,17 +69,14 @@ export const useStyles = makeStyles(
      */
     view: {
       height: '100%',
-      paddingHorizontal: 15,
       backgroundColor: theme.colors.viewBackground,
     },
     viewAlt: {
       height: '100%',
-      paddingHorizontal: 15,
       backgroundColor: theme.colors.viewAltBackground,
     },
     viewInv: {
       height: '100%',
-      paddingHorizontal: 15,
       backgroundColor: theme.colors.viewInvBackground,
     },
     /**
