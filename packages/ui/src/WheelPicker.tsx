@@ -3,12 +3,11 @@ import DateTimePicker, {
 } from '@react-native-community/datetimepicker';
 import React, { Key, useEffect, useState } from 'react';
 import { Text, TextStyle, View, ViewStyle } from 'react-native';
-import { fontFamily, viewport } from '@react-native-ff-elements/ui';
 
 import { Picker as RNPicker } from '@react-native-picker/picker';
 import { isEqual } from 'lodash';
 import { makeStyles } from '@rneui/themed';
-import { AppTheme, useTheme } from './theme';
+import { AppTheme, fontFamily, useTheme, viewport } from './theme';
 
 type PickerInternalValue = string | Date;
 type PickerInternalOnChangeValue = {
