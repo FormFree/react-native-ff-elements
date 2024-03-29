@@ -179,7 +179,7 @@ const WheelPicker = ({
     setPickerValue(pv);
     onValueChange(wheelIndex, pv, index);
   };
-  console.log(pickerItems);
+
   return (
     <View>
       {mode === PickerMode.Date ? (
