@@ -62,6 +62,10 @@ export interface ColorSet {
   readonly viewAltBackground: string;
   readonly viewInvBackground: string;
 
+  readonly activeTabBackground: string;
+  readonly inactiveTabBackground: string;
+  readonly tabBarBorder: string;
+
   readonly switchOffThumb: string;
   readonly switchOnThumb: string;
   readonly switchOffTrack: string;

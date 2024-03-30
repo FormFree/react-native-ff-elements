@@ -69,6 +69,10 @@ export const theme: CreateThemeOptions = {
     viewAltBackground: '#000000',
     viewInvBackground: '#0078fe',
 
+    activeTabBackground: '#000000',
+    inactiveTabBackground: '#000000',
+    tabBarBorder: '#202020',
+
     ...Platform.select({
       ios: {
         switchOffThumb: '#ffffff',
@@ -153,6 +157,10 @@ export const theme: CreateThemeOptions = {
     viewBackground: '#f0f0f0',
     viewAltBackground: '#ffffff',
     viewInvBackground: '#0078fe',
+
+    activeTabBackground: '#ffffff',
+    inactiveTabBackground: '#ffffff',
+    tabBarBorder: '#aaaaaa',
 
     ...Platform.select({
       ios: {
