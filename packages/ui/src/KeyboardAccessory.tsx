@@ -1,10 +1,9 @@
-import { AppTheme, useTheme } from './theme';
+import { AppTheme, useTheme, viewport } from './theme';
 import { Button, Icon } from '@rneui/base';
 import { InputAccessoryView, Keyboard, TextInput, View } from 'react-native';
 
 import React, { forwardRef, useImperativeHandle, useState } from 'react';
 import { makeStyles } from '@rneui/themed';
-import { viewport } from '@react-native-ff-elements/ui';
 
 type AccessoryState = {
   fieldCount: number;
