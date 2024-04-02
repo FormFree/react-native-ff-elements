@@ -1,6 +1,12 @@
 import { AppTheme, useTheme, viewport } from './theme';
 import { Button, Icon } from '@rneui/base';
-import { InputAccessoryView, Keyboard, TextInput, View } from 'react-native';
+import {
+  InputAccessoryView,
+  Keyboard,
+  Platform,
+  TextInput,
+  View,
+} from 'react-native';
 
 import React, { forwardRef, useImperativeHandle, useState } from 'react';
 import { makeStyles } from '@rneui/themed';
@@ -27,6 +33,9 @@ const KeyboardAccessory = forwardRef<
   KeyboardAccessorylMethods,
   KeyboardAccessory
 >(({ fieldRefs, id, onDone }: KeyboardAccessory, ref) => {
+  // Only iOS.
+  if (Platform.OS !== 'ios') return null;
+
   const theme = useTheme();
   const s = useStyles(theme);
 
