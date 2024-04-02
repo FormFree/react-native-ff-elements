@@ -41,7 +41,6 @@ const KeyboardAccessory = forwardRef<
     nextDisabled: fieldRefs.length === 0,
     previousDisabled: true,
   });
-  console.log(editorState);
 
   const focusedField = (field: number) => {
     const nextDisabled = field === fieldRefs.length - 1;
@@ -61,7 +60,6 @@ const KeyboardAccessory = forwardRef<
     const nextField = editorState.focusedField + 1;
     const nextDisabled = nextField === fieldRefs.length - 1;
     const previousDisabled = nextField === 0;
-    console.log(nextField, nextDisabled);
     fieldRefs[nextField]?.focus();
     setEditorState(prevState => {
       return {
@@ -76,7 +74,6 @@ const KeyboardAccessory = forwardRef<
   const previous = () => {
     if (editorState.focusedField === undefined) return;
     const nextField = editorState.focusedField - 1;
-    console.log('nextField', nextField);
     const nextDisabled = nextField === fieldRefs.length;
     const previousDisabled = nextField === 0;
     fieldRefs[nextField]?.focus();
