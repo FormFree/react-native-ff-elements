@@ -34,6 +34,7 @@ export type WheelPickerWidth = string | number;
 
 export interface Props {
   androidMode?: 'dialog' | 'dropdown';
+  dropdownIconColor?: string;
   mode?: PickerMode;
   items?: WheelPickerItem[] | WheelPickerItem[][];
   itemStyle?: TextStyle;
@@ -60,6 +61,7 @@ const defaultPlaceholder: WheelPickerItem = {
 
 const WheelPicker = ({
   androidMode,
+  dropdownIconColor,
   mode = PickerMode.Custom,
   items,
   itemStyle,
@@ -230,6 +232,7 @@ const WheelPicker = ({
                       onChange({ wheelIndex, value, index })
                     }
                     selectedValue={pickerValue[wheelIndex]}
+                    dropdownIconColor={dropdownIconColor}
                     style={[s.picker, pickerStyle]}
                     itemStyle={itemStyle}
                     // @ts-expect-error - themeVariant is not typed
