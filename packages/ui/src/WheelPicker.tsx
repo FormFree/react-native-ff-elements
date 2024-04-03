@@ -33,6 +33,7 @@ export type WheelPickerItem = {
 export type WheelPickerWidth = string | number;
 
 export interface Props {
+  androidDialogPrompt?: string;
   androidMode?: 'dialog' | 'dropdown';
   dropdownIconColor?: string;
   mode?: PickerMode;
@@ -60,6 +61,7 @@ const defaultPlaceholder: WheelPickerItem = {
 };
 
 const WheelPicker = ({
+  androidDialogPrompt,
   androidMode,
   dropdownIconColor,
   mode = PickerMode.Custom,
@@ -227,6 +229,7 @@ const WheelPicker = ({
                 ) : null}
                 <View style={{ width: iWidth }}>
                   <RNPicker
+                    prompt={androidDialogPrompt}
                     mode={androidMode || 'dropdown'}
                     onValueChange={(value, index) =>
                       onChange({ wheelIndex, value, index })
