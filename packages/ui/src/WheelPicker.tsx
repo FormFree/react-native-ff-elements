@@ -30,6 +30,7 @@ export type WheelPickerItem = {
 export type WheelPickerWidth = string | number;
 
 export interface Props {
+  androidMode?: 'dialog' | 'dropdown';
   mode?: PickerMode;
   items?: WheelPickerItem[] | WheelPickerItem[][];
   itemStyle?: TextStyle;
@@ -37,6 +38,7 @@ export interface Props {
   labels?: string | string[];
   labelWidth?: WheelPickerWidth | WheelPickerWidth[];
   placeholder?: string | WheelPickerItem | WheelPickerItem[];
+  pickerContainerStyle?: ViewStyle | ViewStyle[];
   pickerStyle?: ViewStyle | ViewStyle[];
   value?: Date | string | string[];
   wheelVisible?: boolean | boolean[];
@@ -54,6 +56,7 @@ const defaultPlaceholder: WheelPickerItem = {
 };
 
 const WheelPicker = ({
+  androidMode,
   mode = PickerMode.Custom,
   items,
   itemStyle,
@@ -61,6 +64,7 @@ const WheelPicker = ({
   labels,
   labelWidth,
   placeholder = defaultPlaceholder,
+  pickerContainerStyle,
   pickerStyle,
   value,
   wheelVisible = true,
@@ -189,7 +193,7 @@ const WheelPicker = ({
           value={pickerValue[0] as Date}
         />
       ) : (
-        <View style={s.pickerContainer}>
+        <View style={[s.pickerContainer, pickerContainerStyle]}>
           {pickerItems.map((wheel, wheelIndex) => {
             if (!pickerWheelVisible[wheelIndex]) {
               return null;
@@ -215,6 +219,7 @@ const WheelPicker = ({
                 ) : null}
                 <View style={{ width: iWidth }}>
                   <RNPicker
+                    mode={androidMode || 'dropdown'}
                     onValueChange={(value, index) =>
                       onChange({ wheelIndex, value, index })
                     }
