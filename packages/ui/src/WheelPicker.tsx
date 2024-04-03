@@ -25,6 +25,9 @@ export type WheelPickerItem = {
   label: string;
   value: string | number;
   color?: string;
+  style?: ViewStyle;
+  fontFamily?: string;
+  enabled?: boolean;
 };
 
 export type WheelPickerWidth = string | number;
@@ -162,6 +165,9 @@ const WheelPicker = ({
         value={item.value}
         key={item.value as Key}
         color={item.color || theme.colors.text}
+        style={item.style}
+        fontFamily={item.fontFamily}
+        enabled={item.enabled}
       />
     ));
   };
