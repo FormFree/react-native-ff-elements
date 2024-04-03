@@ -35,6 +35,8 @@ export type WheelPickerWidth = string | number;
 export interface Props {
   androidDialogPrompt?: string;
   androidMode?: 'dialog' | 'dropdown';
+  androidOnBlur?: () => void;
+  androidOnFocus?: () => void;
   dropdownIconColor?: string;
   mode?: PickerMode;
   items?: WheelPickerItem[] | WheelPickerItem[][];
@@ -63,6 +65,8 @@ const defaultPlaceholder: WheelPickerItem = {
 const WheelPicker = ({
   androidDialogPrompt,
   androidMode,
+  androidOnBlur,
+  androidOnFocus,
   dropdownIconColor,
   mode = PickerMode.Custom,
   items,
@@ -234,6 +238,8 @@ const WheelPicker = ({
                     onValueChange={(value, index) =>
                       onChange({ wheelIndex, value, index })
                     }
+                    onBlur={androidOnBlur}
+                    onFocus={androidOnFocus}
                     selectedValue={pickerValue[wheelIndex]}
                     dropdownIconColor={dropdownIconColor}
                     style={[s.picker, pickerStyle]}
