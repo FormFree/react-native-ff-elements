@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.29](https://github.com/formfree/react-native-ff-elements/compare/@react-native-ff-elements/ui@0.0.28...@react-native-ff-elements/ui@0.0.29) (2024-04-24)
+
+**Note:** Version bump only for package @react-native-ff-elements/ui
+
 ## [0.0.28](https://github.com/formfree/react-native-ff-elements/compare/@react-native-ff-elements/ui@0.0.27...@react-native-ff-elements/ui@0.0.28) (2024-04-16)
 
 **Note:** Version bump only for package @react-native-ff-elements/ui
