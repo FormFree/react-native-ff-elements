@@ -1,3 +1,4 @@
+export * from './biometrics';
 export * from './event';
 export * from './logger';
 export * from './network';
