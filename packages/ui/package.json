@@ -1,6 +1,6 @@
 {
   "name": "@react-native-ff-elements/ui",
-  "version": "0.0.34",
+  "version": "0.0.35",
   "description": "A React Native library for apps.",
   "author": "FormFree Holdings",
   "license": "MIT",
@@ -34,7 +34,7 @@
   "types": "lib/typescript/src/index.d.ts",
   "dependencies": {
     "@react-native-ff-elements/common": "^0.0.3",
-    "@react-native-ff-elements/core": "^0.0.10"
+    "@react-native-ff-elements/core": "^0.0.11"
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
@@ -104,5 +104,5 @@
       ]
     ]
   },
-  "gitHead": "0efc172cddb2182b92050d1a153d39807b99baec"
+  "gitHead": "3b6425ca86d5d51bcb66a39100f9518c0e883328"
 }
