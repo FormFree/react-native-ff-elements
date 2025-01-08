@@ -1,4 +1,4 @@
-import { CreateThemeOptions, createTheme } from '@rneui/themed';
+import { type CreateThemeOptions, createTheme } from '@rneui/themed';
 
 import { Platform } from 'react-native';
 

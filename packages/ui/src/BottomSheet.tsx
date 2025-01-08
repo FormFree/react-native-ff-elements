@@ -6,7 +6,7 @@ import {
   BottomSheetBackdrop,
   BottomSheetModal,
   BottomSheetModalProvider,
-  BottomSheetProps,
+  type BottomSheetProps,
 } from '@gorhom/bottom-sheet';
 import React, { useCallback } from 'react';
 

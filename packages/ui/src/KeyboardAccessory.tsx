@@ -1,4 +1,4 @@
-import { AppTheme, useTheme, viewport } from './theme';
+import { type AppTheme, useTheme, viewport } from './theme';
 import { Button, Icon } from '@rneui/base';
 import {
   InputAccessoryView,

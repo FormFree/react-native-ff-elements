@@ -1,7 +1,7 @@
 import { Text, View } from 'react-native';
 import type { ToastConfigParams } from 'react-native-toast-message';
 import React from 'react';
-import { AppTheme, useTheme } from '../theme';
+import { type AppTheme, useTheme } from '../theme';
 import { makeStyles } from '@rneui/themed';
 
 export const useToastConfig = () => {

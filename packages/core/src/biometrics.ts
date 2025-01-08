@@ -28,7 +28,6 @@ const biometricAuthentication = async (): Promise<void> => {
         // No biometrics available, passive authorization.
       }
     })
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     .catch(() => {
       throw new BiometricsError('User not authorized');
     });

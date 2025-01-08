@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   arrowParens: 'avoid',
   bracketSameLine: true,
   bracketSpacing: true,
@@ -6,3 +6,5 @@ module.exports = {
   singleQuote: true,
   trailingComma: 'all',
 };
+
+export default config;

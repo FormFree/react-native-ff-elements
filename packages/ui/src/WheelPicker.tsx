@@ -1,13 +1,13 @@
 import DateTimePicker, {
-  DateTimePickerEvent,
+  type DateTimePickerEvent,
 } from '@react-native-community/datetimepicker';
-import React, { Key, useEffect, useState } from 'react';
-import { Text, TextStyle, View, ViewStyle } from 'react-native';
+import React, { type Key, useEffect, useState } from 'react';
+import { Text, type TextStyle, View, type ViewStyle } from 'react-native';
 
 import { Picker as RNPicker } from '@react-native-picker/picker';
 import { isEqual } from 'lodash';
 import { makeStyles } from '@rneui/themed';
-import { AppTheme, fontFamily, useTheme, viewport } from './theme';
+import { type AppTheme, fontFamily, useTheme, viewport } from './theme';
 
 type PickerInternalValue = string | Date;
 type PickerInternalOnChangeValue = {

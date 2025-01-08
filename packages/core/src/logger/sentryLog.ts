@@ -1,9 +1,11 @@
+/* global __DEV__, console */ 
 import * as Sentry from '@sentry/react-native';
 
 import { getBuildNumber, getVersion } from 'react-native-device-info';
 
 import { FormFreeElements } from '..';
-import type { SeverityLevel } from '@sentry/types';
+import { type SentryTransportOptions } from '..';
+import type { SeverityLevel } from '@sentry/core';
 import type { transportFunctionType } from 'react-native-logs';
 
 enum SentrySeverityMap {
@@ -24,11 +26,15 @@ const init = (userId?: string) => {
       release: getVersion(),
       dist: getBuildNumber(),
     });
-    userId && Sentry.setUser({ id: userId });
+    if (userId) {
+      Sentry.setUser({ id: userId })
+    };
   }
 };
 
-const sentryTransport: transportFunctionType = props => {
+const sentryTransport: transportFunctionType<
+  SentryTransportOptions
+> = props => {
   if (props.level.text.includes('session')) {
     return;
   }

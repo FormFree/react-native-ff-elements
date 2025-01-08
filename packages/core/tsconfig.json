@@ -1,9 +1,7 @@
 {
   "extends": "../../tsconfig",
-  "references": [
-    { "path": "../common" },
-  ],
+  "references": [{ "path": "../common" }],
   "compilerOptions": {
-    "outDir": "./lib/typescript"
-  },
+    "outDir": "./lib/typescript",
+  }
 }

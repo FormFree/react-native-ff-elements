@@ -1,9 +1,9 @@
-import React, { ReactNode, createContext } from 'react';
+import React, { type ReactNode } from 'react';
 
 import EventEmitter from 'eventemitter3';
 
 const event = new EventEmitter();
-export const EventContext = createContext<EventEmitter>(event);
+export const EventContext = React.createContext<EventEmitter>(event);
 
 export const EventProvider = ({
   children,
