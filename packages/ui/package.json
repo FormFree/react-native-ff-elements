@@ -70,7 +70,7 @@
     "react": ">=18.3.1",
     "react-native": ">=0.76.5",
     "react-native-share": "^12.0.3",
-    "react-native-svg": "^15.10.1",
+    "react-native-svg": "^13.14.1",
     "react-native-toast-message": "^2.2.1"
   },
   "jest": {
