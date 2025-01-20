@@ -30,10 +30,10 @@ export const viewport = {
 
 export const useStyles = makeStyles(
   (theme): Styles => ({
-    extra: undefined,
     /**
      * Constants
      */
+
     headerBar: {
       ...Platform.select({
         android: {
@@ -64,24 +64,11 @@ export const useStyles = makeStyles(
         },
       }),
     },
-    /**
-     * View
-     */
-    view: {
-      height: '100%',
-      backgroundColor: theme.colors.viewBackground,
-    },
-    viewAlt: {
-      height: '100%',
-      backgroundColor: theme.colors.viewAltBackground,
-    },
-    viewInv: {
-      height: '100%',
-      backgroundColor: theme.colors.viewInvBackground,
-    },
+
     /**
      * Text
      */
+
     textHeadingXL: {
       color: theme.colors.text,
       marginVertical: 10,
@@ -180,210 +167,11 @@ export const useStyles = makeStyles(
       color: theme.colors.textLink,
       textDecorationLine: 'underline',
     },
-    /**
-     * Button
-     */
-    button: {
-      backgroundColor: theme.colors.brandPrimary,
-      borderRadius: 50,
-      height: 40,
-      paddingHorizontal: 15,
-      minWidth: 180,
-    },
-    buttonTitle: {
-      color: theme.colors.white,
-      fontSize: fontSizes.normal,
-      fontFamily,
-      ...Platform.select({
-        ios: {
-          marginTop: 0,
-        },
-        android: {
-          marginTop: -2,
-        },
-      }),
-    },
-    buttonDisabled: {
-      opacity: 0.4,
-    },
-    buttonClear: {
-      backgroundColor: theme.colors.transparent,
-      height: 40,
-      paddingHorizontal: 15,
-      minWidth: 180,
-    },
-    buttonClearTitle: {
-      color: theme.colors.brandPrimary,
-      fontSize: fontSizes.normal,
-      fontFamily,
-      ...Platform.select({
-        ios: {
-          marginTop: 0,
-        },
-        android: {
-          marginTop: -2,
-        },
-      }),
-    },
-    buttonClearDisabled: {
-      backgroundColor: theme.colors.transparent,
-      opacity: 0.4,
-    },
-    buttonOutline: {
-      backgroundColor: theme.colors.transparent,
-      height: 40,
-      paddingHorizontal: 15,
-      minWidth: 180,
-      borderWidth: 1,
-      borderRadius: 50,
-      borderColor: theme.colors.brandPrimary,
-    },
-    buttonOutlineTitle: {
-      color: theme.colors.brandPrimary,
-      fontSize: fontSizes.normal,
-      fontFamily,
-      ...Platform.select({
-        ios: {
-          marginTop: 0,
-        },
-        android: {
-          marginTop: -2,
-        },
-      }),
-    },
-    buttonOutlineDisabled: {
-      backgroundColor: theme.colors.transparent,
-      opacity: 0.4,
-    },
-    buttonInvOutline: {
-      backgroundColor: theme.colors.transparent,
-      height: 40,
-      paddingHorizontal: 15,
-      minWidth: 180,
-      borderWidth: 1,
-      borderRadius: 50,
-      borderColor: theme.colors.stickyWhite,
-    },
-    buttonInvOutlineTitle: {
-      color: theme.colors.textInv,
-      fontSize: fontSizes.normal,
-      fontFamily,
-      ...Platform.select({
-        ios: {
-          marginTop: 0,
-        },
-        android: {
-          marginTop: -2,
-        },
-      }),
-    },
-    buttonInvOutlineDisabled: {
-      backgroundColor: theme.colors.transparent,
-      opacity: 0.4,
-    },
-    buttonInvClear: {
-      backgroundColor: theme.colors.transparent,
-      height: 40,
-      paddingHorizontal: 15,
-      minWidth: 180,
-    },
-    buttonInvClearTitle: {
-      color: theme.colors.textInv,
-      fontSize: fontSizes.normal,
-      fontFamily,
-      ...Platform.select({
-        ios: {
-          marginTop: 0,
-        },
-        android: {
-          marginTop: -2,
-        },
-      }),
-    },
-    buttonInvClearDisabled: {
-      backgroundColor: theme.colors.transparent,
-      opacity: 0.4,
-    },
-    buttonScreenHeader: {
-      backgroundColor: theme.colors.transparent,
-      height: 40,
-      paddingHorizontal: 0,
-      minWidth: 0,
-      justifyContent: 'flex-start',
-    },
-    buttonScreenHeaderTitle: {
-      color: theme.colors.screenHeaderButtonText,
-      fontSize: fontSizes.normal,
-      fontFamily,
-      ...Platform.select({
-        ios: {
-          marginTop: 0,
-        },
-        android: {
-          marginTop: -2,
-        },
-      }),
-    },
-    buttonScreenHeaderDisabled: {
-      backgroundColor: theme.colors.transparent,
-      opacity: 0.4,
-    },
-    buttonInvScreenHeader: {
-      backgroundColor: theme.colors.transparent,
-      height: 40,
-      paddingHorizontal: 0,
-      minWidth: 0,
-      justifyContent: 'flex-start',
-    },
-    buttonInvScreenHeaderTitle: {
-      color: theme.colors.stickyWhite,
-      fontSize: fontSizes.normal,
-      fontFamily,
-      ...Platform.select({
-        ios: {
-          marginTop: 0,
-        },
-        android: {
-          marginTop: -2,
-        },
-      }),
-    },
-    buttonInvScreenHeaderDisabled: {
-      backgroundColor: theme.colors.transparent,
-      opacity: 0.4,
-    },
-    listItemContainer: {
-      backgroundColor: theme.colors.listItem,
-      borderColor: theme.colors.listItemBorder,
-      paddingLeft: 15,
-      overflow: 'hidden',
-    },
-    listItemBorder: {
-      left: 15,
-      right: 0,
-      borderColor: theme.colors.listItemBorder,
-    },
-    listItemTitle: {
-      color: theme.colors.text,
-      fontSize: fontSizes.normal,
-      fontFamily,
-      minWidth: 150,
-    },
-    listItemSubtitle: {
-      color: theme.colors.textDim,
-      fontSize: fontSizes.small,
-      fontFamily,
-      fontWeight: 'normal',
-    },
-    listItemValue: {
-      color: theme.colors.text,
-      fontSize: fontSizes.normal,
-      fontFamily,
-      textAlign: 'right',
-    },
+
     /**
      * Shadow
      */
+
     shadow: {
       shadowColor: theme.colors.stickyBlack,
       ...Platform.select({
@@ -434,14 +222,6 @@ export const useStyles = makeStyles(
           backgroundColor: theme.colors.black,
         },
       }),
-    },
-    /**
-     * Miscellaneous
-     */
-    activityIndicator: {
-      width: '100%',
-      height: '100%',
-      backgroundColor: theme.colors.hintGray,
     },
   }),
 );

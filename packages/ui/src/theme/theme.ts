@@ -1,25 +1,12 @@
 import { type CreateThemeOptions, createTheme } from '@rneui/themed';
 
-import { Platform } from 'react-native';
-
 export const theme: CreateThemeOptions = {
   darkColors: {
-    brandPrimary: '#0078fe',
-    brandSecondary: '#8543c7',
-
     white: '#000000',
     black: '#ffffffde',
     stickyWhite: '#ffffff',
     stickyBlack: '#000000',
     transparent: '#00000000',
-
-    text: '#ffffffde',
-    textLight: '#878787',
-    textDim: '#878787',
-    textInv: '#ffffffde',
-    textLink: '#0078fe',
-    textLinkInv: '#ffffffde',
-    textPlaceholder: '#878787',
 
     darkGray: '#ffffffde',
     midGray: '#787878',
@@ -40,75 +27,21 @@ export const theme: CreateThemeOptions = {
     whiteTransparentLight: 'rgba(0, 0, 0, 0.2)',
     whiteTransparentSubtle: 'rgba(0, 0, 0, 0.1)',
 
-    primary: '#0078fe',
-    warning: '#ff804b',
-    success: '#00a000',
-    error: '#c00000',
-    assertive: '#c00000',
-    assertiveInv: '#ff804b',
-    calm: '#0078fe',
+    kbAccessoryButtonText: '#0078fe',
 
-    disabled: '#787878',
-
-    button: '#0078fe',
-    buttonText: '#ffffffde',
-    buttonInv: '#0078fe',
-
-    listHeaderBackground: '#000000',
-    listHeaderTextBackground: '#000000',
-    listItem: '#101010',
-    listItemBorder: '#202020',
-    listItemAlt: '#000000',
-    listItemIcon: '#878787',
-
-    screenHeaderTitle: '#ffffffde',
-    screenHeaderBackground: '#000000',
-    screenHeaderInvBackground: '#0078fe',
+    text: '#ffffffde',
+    textLink: '#0078fe',
 
     viewBackground: '#000000',
     viewAltBackground: '#000000',
     viewInvBackground: '#0078fe',
-
-    activeTabBackground: '#000000',
-    inactiveTabBackground: '#000000',
-    tabBarBorder: '#202020',
-
-    ...Platform.select({
-      ios: {
-        switchOffThumb: '#ffffff',
-        switchOnThumb: '#ffffff',
-        switchOffTrack: '#e5e5e5',
-        switchOnTrack: '#007bff',
-        screenHeaderButtonText: '#007bff',
-        screenHeaderInvButtonText: '#ffffffde',
-      },
-      android: {
-        switchOffThumb: '#787878',
-        switchOnThumb: '#007bff',
-        switchOffTrack: '#e5e5e5',
-        switchOnTrack: '#007bff40',
-        screenHeaderButtonText: '#ffffffde',
-        screenHeaderInvButtonText: '#ffffffde',
-      },
-    }),
   },
   lightColors: {
-    brandPrimary: '#007bff',
-    brandSecondary: '#0078fe',
-
     white: '#ffffff',
     black: '#000000',
     stickyWhite: '#ffffff',
     stickyBlack: '#000000',
     transparent: '#00000000',
-
-    text: '#101010',
-    textLight: '#787878',
-    textDim: '#aaaaaa',
-    textInv: '#ffffff',
-    textLink: '#0078fe',
-    textLinkInv: '#ffffff',
-    textPlaceholder: '#878787',
 
     darkGray: '#545454',
     midGray: '#787878',
@@ -129,57 +62,14 @@ export const theme: CreateThemeOptions = {
     whiteTransparentLight: 'rgba(255, 255, 255, 0.3)',
     whiteTransparentSubtle: 'rgba(255, 255, 255, 0.05)',
 
-    primary: '#0078fe',
-    warning: '#ff804b',
-    success: '#00a000',
-    error: '#c00000',
-    assertive: '#c00000',
-    assertiveInv: '#ff804b',
-    calm: '#0078fe',
+    kbAccessoryButtonText: '#0078fe',
 
-    disabled: '#787878',
-
-    button: '#0078fe',
-    buttonText: '#ffffff',
-    buttonInv: '#0078fe',
-
-    listHeaderBackground: '#f0f0f0',
-    listHeaderTextBackground: '#f0f0f0',
-    listItem: '#ffffff',
-    listItemBorder: '#e5e5e5',
-    listItemAlt: '#f0f0f0',
-    listItemIcon: '#aaaaaa',
-
-    screenHeaderTitle: '#000000',
-    screenHeaderBackground: '#ffffff',
-    screenHeaderInvBackground: '#0078fe',
+    text: '#303030',
+    textLink: '#0078fe',
 
     viewBackground: '#f0f0f0',
     viewAltBackground: '#ffffff',
     viewInvBackground: '#0078fe',
-
-    activeTabBackground: '#ffffff',
-    inactiveTabBackground: '#ffffff',
-    tabBarBorder: '#aaaaaa',
-
-    ...Platform.select({
-      ios: {
-        switchOffThumb: '#ffffff',
-        switchOnThumb: '#ffffff',
-        switchOffTrack: '#787878',
-        switchOnTrack: '#007bff',
-        screenHeaderButtonText: '#007bff',
-        screenHeaderInvButtonText: '#ffffff',
-      },
-      android: {
-        switchOffThumb: '#cccccc',
-        switchOnThumb: '#007bff',
-        switchOffTrack: '#787878',
-        switchOnTrack: '#007bff40',
-        screenHeaderButtonText: '#000000',
-        screenHeaderInvButtonText: '#ffffff',
-      },
-    }),
   },
 };
 

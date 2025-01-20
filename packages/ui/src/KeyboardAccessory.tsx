@@ -105,7 +105,7 @@ const KeyboardAccessory = forwardRef<
             <Icon
               name="chevron-up-outline"
               type={'ionicon'}
-              color={theme.colors.screenHeaderButtonText}
+              color={theme.colors.kbAccessoryButtonText}
               size={28}
               disabled={editorState.previousDisabled}
               disabledStyle={s.fieldNavButton}
@@ -120,7 +120,7 @@ const KeyboardAccessory = forwardRef<
             <Icon
               name="chevron-down-outline"
               type={'ionicon'}
-              color={theme.colors.screenHeaderButtonText}
+              color={theme.colors.kbAccessoryButtonText}
               size={28}
               disabled={editorState.nextDisabled}
               disabledStyle={s.fieldNavButton}
@@ -157,7 +157,7 @@ const useStyles = makeStyles((_theme, theme: AppTheme) => ({
   doneTitle: {
     ...theme.styles.textNormal,
     ...theme.styles.textBold,
-    color: theme.colors.screenHeaderButtonText,
+    color: theme.colors.kbAccessoryButtonText,
   },
   fieldNavButton: {
     backgroundColor: theme.colors.transparent,
