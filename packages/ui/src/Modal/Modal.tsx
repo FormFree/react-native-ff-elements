@@ -19,6 +19,7 @@ const Modal = React.forwardRef<Modal, ModalProps>((props, ref) => {
     backgroundStyle,
     children,
     background = 'normal',
+    enableDynamicSizing,
     enableGestureBehavior = true,
     handleComponent,
     handleIndicatorStyle,
@@ -82,6 +83,7 @@ const Modal = React.forwardRef<Modal, ModalProps>((props, ref) => {
       activeOffsetY={[-5, 5]}
       enablePanDownToClose={enablePanDownToClose}
       enableHandlePanningGesture={enableHandlePanningGesture}
+      enableDynamicSizing={enableDynamicSizing}
       touchBackdropBehavior={touchBackdropBehavior}
       backgroundStyle={[{ backgroundColor }, backgroundStyle]}
       handleComponent={handleComponent}

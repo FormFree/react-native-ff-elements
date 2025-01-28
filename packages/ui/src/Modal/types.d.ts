@@ -15,6 +15,7 @@ export interface ModalProps {
   backgroundStyle?: ViewStyle;
   children: ReactNode;
   background?: 'normal' | 'inverse';
+  enableDynamicSizing?: boolean;
   enableGestureBehavior?: boolean;
   handleComponent?: React.FC<BottomSheetHandleProps> | null | undefined;
   handleIndicatorStyle?: ViewStyle;
