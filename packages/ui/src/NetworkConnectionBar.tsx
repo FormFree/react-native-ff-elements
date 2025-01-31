@@ -4,7 +4,7 @@ import Toast, { type ToastShowParams } from 'react-native-toast-message';
 import { NetworkContext } from '@react-native-ff-elements/core';
 
 interface Props {
-  toastProps: ToastShowParams;
+  toastProps?: ToastShowParams;
 }
 
 const NetworkConnectionBar = ({ toastProps }: Props) => {
