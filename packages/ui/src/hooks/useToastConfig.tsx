@@ -10,7 +10,7 @@ export const useToastConfig = () => {
 
   return {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    networkToast: ({ text1, text2 }: ToastConfigParams<any>) => (
+    networkConnection: ({ text1, text2 }: ToastConfigParams<any>) => (
       <View style={s.container}>
         <Text style={theme.styles.textNormal}>{text1}</Text>
         <Text style={theme.styles.textTiny}>{text2}</Text>
