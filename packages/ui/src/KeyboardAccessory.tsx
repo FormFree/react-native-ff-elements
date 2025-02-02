@@ -146,7 +146,7 @@ const KeyboardAccessory = forwardRef<
           containerStyle={s.doneContainer}
           titleStyle={s.doneTitle}
           disabled={disabledDone}
-          disabledTitleStyle={[{...s.doneTitle, opacity: 0.4}, disabledTitleStyle]}
+          disabledTitleStyle={[s.doneTitle, s.doneDisabled, disabledTitleStyle]}
           onPress={onDone || Keyboard.dismiss}
         />
       </View>
@@ -166,6 +166,9 @@ const useStyles = makeStyles((_theme, theme: AppTheme) => ({
     position: 'absolute',
     top: 3,
     right: 10,
+  },
+  doneDisabled: {
+    opacity: 0.4,
   },
   doneTitle: {
     ...theme.styles.textNormal,
