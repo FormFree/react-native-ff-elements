@@ -6,6 +6,7 @@ import {
   Platform,
   TextInput,
   View,
+  type TextStyle,
 } from 'react-native';
 
 import React, { forwardRef, useImperativeHandle, useState } from 'react';
@@ -19,6 +20,9 @@ type AccessoryState = {
 };
 
 export interface KeyboardAccessory {
+  disabledDone?: boolean;
+  disabledTitleStyle?: TextStyle | TextStyle[];
+  doneText?: string;
   // The fieldRefs array must be ordered the same as intended field navigation on the form.
   fieldRefs: (TextInput | null)[];
   id: string;
@@ -32,7 +36,14 @@ export interface KeyboardAccessorylMethods {
 const KeyboardAccessory = forwardRef<
   KeyboardAccessorylMethods,
   KeyboardAccessory
->(({ fieldRefs, id, onDone }: KeyboardAccessory, ref) => {
+>(({
+  disabledDone,
+  disabledTitleStyle,
+  doneText,
+  fieldRefs,
+  id,
+  onDone
+}: KeyboardAccessory, ref) => {
   // Only iOS.
   if (Platform.OS !== 'ios') return null;
 
@@ -131,9 +142,11 @@ const KeyboardAccessory = forwardRef<
         />
         <Button
           type={'clear'}
-          title={'Done'}
+          title={doneText || 'Done'}
           containerStyle={s.doneContainer}
           titleStyle={s.doneTitle}
+          disabled={disabledDone}
+          disabledTitleStyle={[{...s.doneTitle, opacity: 0.4}, disabledTitleStyle]}
           onPress={onDone || Keyboard.dismiss}
         />
       </View>
