@@ -24,6 +24,7 @@ const Modal = React.forwardRef<Modal, ModalProps>((props, ref) => {
     handleComponent,
     handleIndicatorStyle,
     modalParent = false,
+    scrollContainerStyle,
     scrollEnabled = true,
     snapPoints = useMemo(() => ['92%'], []),
     onClose = useCallback(() => {
@@ -96,7 +97,7 @@ const Modal = React.forwardRef<Modal, ModalProps>((props, ref) => {
       {scrollEnabled ? (
         <BottomSheetScrollView
           scrollEnabled={scrollEnabled}
-          contentContainerStyle={s.container}
+          contentContainerStyle={[s.container, scrollContainerStyle]}
           showsVerticalScrollIndicator={false}>
           {children}
         </BottomSheetScrollView>

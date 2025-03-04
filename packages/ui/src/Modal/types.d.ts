@@ -22,6 +22,7 @@ export interface ModalProps {
   modalParent?: boolean;
   onClose?: () => void; // Close only
   onDismiss?: () => void; // Close and unmount
+  scrollContainerStyle?: ViewStyle;
   scrollEnabled?: boolean;
   snapPoints?: Array<string | number> | SharedValue<Array<string | number>>;
 }
