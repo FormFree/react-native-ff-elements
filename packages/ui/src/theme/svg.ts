@@ -3,8 +3,8 @@ import type { SVGImages } from '@react-native-ff-elements/common';
 import iconMissing from './img/icon-missing.svg';
 
 type SvgOptions = {
-  fill: boolean;
-  stroke: boolean;
+  fill?: boolean;
+  stroke?: boolean;
 };
 
 export const getColoredSvg = (which: string, opts?: SvgOptions) => {
