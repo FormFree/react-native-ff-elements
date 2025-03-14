@@ -146,6 +146,7 @@ export const useStyles = makeStyles(
       fontWeight: 'normal',
     },
     textMedium: {
+      color: theme.colors.text,
       fontFamily: fontFamilyMedium,
       fontWeight: 'normal',
     },
