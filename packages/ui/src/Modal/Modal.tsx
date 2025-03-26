@@ -19,6 +19,8 @@ const Modal = React.forwardRef<Modal, ModalProps>((props, ref) => {
     backgroundStyle,
     children,
     background = 'normal',
+    bottomInset,
+    detached,
     enableDynamicSizing,
     enableGestureBehavior = true,
     handleComponent,
@@ -27,6 +29,7 @@ const Modal = React.forwardRef<Modal, ModalProps>((props, ref) => {
     scrollContainerStyle,
     scrollEnabled = true,
     snapPoints = useMemo(() => ['92%'], []),
+    style,
     onClose = useCallback(() => {
       return;
     }, []),
@@ -87,6 +90,9 @@ const Modal = React.forwardRef<Modal, ModalProps>((props, ref) => {
       enableDynamicSizing={enableDynamicSizing}
       touchBackdropBehavior={touchBackdropBehavior}
       backgroundStyle={[{ backgroundColor }, backgroundStyle]}
+      style={style}
+      detached={detached}
+      bottomInset={bottomInset}
       handleComponent={handleComponent}
       handleIndicatorStyle={[
         { backgroundColor: handleIndicator },

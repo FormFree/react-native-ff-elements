@@ -15,6 +15,8 @@ export interface ModalProps {
   backgroundStyle?: ViewStyle;
   children: ReactNode;
   background?: 'normal' | 'inverse';
+  bottomInset?: number;
+  detached?: boolean;
   enableDynamicSizing?: boolean;
   enableGestureBehavior?: boolean;
   handleComponent?: React.FC<BottomSheetHandleProps> | null | undefined;
@@ -25,6 +27,7 @@ export interface ModalProps {
   scrollContainerStyle?: ViewStyle;
   scrollEnabled?: boolean;
   snapPoints?: Array<string | number> | SharedValue<Array<string | number>>;
+  style?: ViewStyle | ViewStyle[];
 }
 
 export interface ModalMethods {
