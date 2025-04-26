@@ -1,6 +1,6 @@
 {
   "name": "@react-native-ff-elements/core",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "A React Native library for apps.",
   "author": "FormFree Holdings",
   "license": "MIT",
@@ -33,7 +33,7 @@
   "module": "lib/module/index.js",
   "types": "lib/typescript/src/index.d.ts",
   "dependencies": {
-    "@react-native-ff-elements/common": "^0.0.5",
+    "@react-native-ff-elements/common": "^0.0.6",
     "react-native-biometrics": "^3.0.1"
   },
   "devDependencies": {
@@ -94,5 +94,5 @@
       ]
     ]
   },
-  "gitHead": "364b7f00f78896808f1323bf80ef09706c6b3f2c"
+  "gitHead": "c891aa2bfaa8dd76794577e6bc63ffaaac01d7db"
 }

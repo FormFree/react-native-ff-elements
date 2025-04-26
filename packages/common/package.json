@@ -1,6 +1,6 @@
 {
   "name": "@react-native-ff-elements/common",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A React Native library for apps.",
   "author": "FormFree Holdings",
   "license": "MIT",
@@ -85,5 +85,5 @@
       ]
     ]
   },
-  "gitHead": "cfa4d3bca3023e76e7d41c4c41d614544fcc408d"
+  "gitHead": "c891aa2bfaa8dd76794577e6bc63ffaaac01d7db"
 }
