@@ -22,7 +22,7 @@ const ColorModeSwitch = ({ children, themeSettings }: Props) => {
     updateTheme({
       mode: control === 'dark' ? 'dark' : 'light',
     });
-  }, [colorScheme, updateTheme]);
+  }, [colorScheme, themeSettings, updateTheme]);
 
   return <>{children}</>;
 };
